@@ -1,0 +1,444 @@
+<!-- ================= HOME PAGE ================= -->
+
+<div id="homePage" class="page active">
+
+  <header class="top-header">
+
+    <div
+      class="logo"
+      onclick="showPage('homePage')">
+
+      <span class="logo-mark">
+        A
+      </span>
+
+      <span>
+        Anoweb
+      </span>
+
+    </div>
+
+
+    <button
+      class="rules-link"
+      onclick="showPage('rulesPage')">
+
+      Rules & Guidelines
+
+    </button>
+
+  </header>
+
+
+  <main class="hero">
+
+    <div class="hero-content">
+
+      <div class="welcome">
+        WELCOME TO ANOWEB
+      </div>
+
+
+      <h1>
+
+        Your voice.
+
+        <br>
+
+        <span>
+          Your identity stays yours.
+        </span>
+
+      </h1>
+
+
+      <p>
+
+        Share your thoughts, experiences and
+        opinions anonymously. Your identity
+        stays private.
+
+      </p>
+
+
+      <button
+        class="main-button"
+        onclick="showPage('remarkPage')">
+
+        Leave a Remark
+
+      </button>
+
+    </div>
+
+
+    <div class="hero-logo">
+
+      <div class="orbit orbit-one"></div>
+
+      <div class="orbit orbit-two"></div>
+
+      <div class="big-logo">
+        A
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- VIEW REMARKS -->
+
+  <div class="home-bottom">
+
+    <p>
+      Want to see what other students are saying?
+    </p>
+
+
+    <button
+      class="remarks-button"
+      onclick="showPage('remarksPage')">
+
+      💬 View Anonymous Remarks
+
+    </button>
+
+  </div>
+
+</div>
+
+
+
+<!-- ================= RULES PAGE ================= -->
+
+<div id="rulesPage" class="page">
+
+  <header class="inner-header">
+
+    <button
+      class="back-button"
+      onclick="showPage('homePage')">
+
+      ← Anoweb
+
+    </button>
+
+
+    <h1>
+      Rules & Guidelines
+    </h1>
+
+  </header>
+
+
+  <main class="rules-container">
+
+    <p class="page-intro">
+
+      Please follow these guidelines when
+      using Anoweb.
+
+    </p>
+
+
+    <div class="rule-card">
+
+      <div class="rule-number">
+        01
+      </div>
+
+      <div>
+
+        <h2>
+          Be respectful
+        </h2>
+
+        <p>
+          Share your thoughts without insulting
+          or attacking other people.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+      <div class="rule-number">
+        02
+      </div>
+
+      <div>
+
+        <h2>
+          No threats
+        </h2>
+
+        <p>
+          Threatening or encouraging harm
+          is not allowed.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+      <div class="rule-number">
+        03
+      </div>
+
+      <div>
+
+        <h2>
+          Protect privacy
+        </h2>
+
+        <p>
+          Do not share someone's private
+          information.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+      <div class="rule-number">
+        04
+      </div>
+
+      <div>
+
+        <h2>
+          Keep remarks genuine
+        </h2>
+
+        <p>
+          Share real experiences and
+          honest opinions.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+      <div class="rule-number">
+        05
+      </div>
+
+      <div>
+
+        <h2>
+          No spam
+        </h2>
+
+        <p>
+          Avoid posting the same message
+          repeatedly.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+      <div class="rule-number">
+        06
+      </div>
+
+      <div>
+
+        <h2>
+          Use appropriate language
+        </h2>
+
+        <p>
+          Keep the platform suitable
+          for everyone.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="rule-card">
+
+      <div class="rule-number">
+        07
+      </div>
+
+      <div>
+
+        <h2>
+          Think before submitting
+        </h2>
+
+        <p>
+          Once submitted, a remark may be
+          visible to other users.
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+
+
+<!-- ================= LEAVE REMARK PAGE ================= -->
+
+<div id="remarkPage" class="page">
+
+  <header class="inner-header">
+
+    <button
+      class="back-button"
+      onclick="showPage('homePage')">
+
+      ← Anoweb
+
+    </button>
+
+
+    <h1>
+      Leave a Remark
+    </h1>
+
+  </header>
+
+
+  <main class="remark-container">
+
+    <p class="page-intro">
+
+      Your identity will not be displayed
+      with your remark.
+
+    </p>
+
+
+    <div class="remark-box">
+
+      <h2>
+        What type of remark is this?
+      </h2>
+
+
+      <div class="type-buttons">
+
+        <button
+          id="positiveBtn"
+          class="type-button"
+          onclick="selectType('positive')">
+
+          👍 Positive
+
+        </button>
+
+
+        <button
+          id="negativeBtn"
+          class="type-button"
+          onclick="selectType('negative')">
+
+          👎 Negative
+
+        </button>
+
+      </div>
+
+
+      <h2>
+        Your remark
+      </h2>
+
+
+      <textarea
+        id="remark"
+        placeholder="Write your experience or opinion here..."
+        maxlength="1000">
+      </textarea>
+
+
+      <div class="character-count">
+
+        Maximum 1000 characters
+
+      </div>
+
+
+      <button
+        class="main-button submit-button"
+        onclick="submitRemark()">
+
+        Submit Anonymously
+
+      </button>
+
+
+      <p
+        id="successMessage"
+        class="success-message">
+      </p>
+
+    </div>
+
+  </main>
+
+</div>
+
+
+
+<!-- ================= REMARKS PAGE ================= -->
+
+<div id="remarksPage" class="page">
+
+  <header class="inner-header">
+
+    <button
+      class="back-button"
+      onclick="showPage('homePage')">
+
+      ← Anoweb
+
+    </button>
+
+
+    <h1>
+      Anonymous Remarks
+    </h1>
+
+  </header>
+
+
+  <main class="remarks-container">
+
+    <p class="page-intro">
+
+      Read what students are saying and
+      share your reaction.
+
+    </p>
+
+
+    <div id="allRemarks"></div>
+
+  </main>
+
+</div>

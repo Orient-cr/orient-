@@ -1,0 +1,945 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9ff;
+  color: #1f2937;
+}
+
+
+/* ================= PAGES ================= */
+
+.page {
+  display: none;
+  min-height: 100vh;
+}
+
+
+.page.active {
+  display: block;
+}
+
+
+/* ================= HOME HEADER ================= */
+
+.top-header {
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  background: white;
+
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  color: #312e81;
+}
+
+
+.logo-mark {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f46e5,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 21px;
+}
+
+
+.rules-link {
+  border: none;
+
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+
+.rules-link:hover {
+  color: #7c3aed;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  min-height: calc(100vh - 75px);
+
+  padding: 60px 8%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4338ca,
+      #6366f1,
+      #7c3aed
+    );
+
+  color: white;
+
+  overflow: hidden;
+}
+
+
+.hero-content {
+  max-width: 650px;
+}
+
+
+.welcome {
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 20px;
+
+  opacity: .85;
+}
+
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 76px);
+
+  line-height: 1.05;
+
+  margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+  color: #ddd6fe;
+}
+
+
+.hero p {
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  max-width: 560px;
+
+  margin-bottom: 35px;
+
+  color: #ede9fe;
+}
+
+
+/* ================= MAIN BUTTON ================= */
+
+.main-button {
+  border: none;
+
+  background: white;
+
+  color: #4f46e5;
+
+  padding: 15px 25px;
+
+  border-radius: 12px;
+
+  font-weight: bold;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+
+.main-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+}
+
+
+/* ================= HERO LOGO ================= */
+
+.hero-logo {
+  width: 360px;
+  height: 360px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.big-logo {
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    rgba(255,255,255,.12);
+
+  border:
+    2px solid rgba(255,255,255,.35);
+
+  font-size: 120px;
+
+  font-weight: 900;
+
+  color: white;
+
+  backdrop-filter: blur(5px);
+
+  z-index: 2;
+}
+
+
+.orbit {
+  position: absolute;
+
+  border:
+    1px solid rgba(255,255,255,.25);
+
+  border-radius: 50%;
+}
+
+
+.orbit-one {
+  width: 280px;
+  height: 280px;
+
+  transform: rotate(25deg);
+}
+
+
+.orbit-two {
+  width: 350px;
+  height: 170px;
+
+  transform: rotate(-35deg);
+}
+
+
+/* ================= HOME BOTTOM ================= */
+
+.home-bottom {
+  padding: 45px 20px;
+
+  text-align: center;
+
+  background: white;
+}
+
+
+.home-bottom p {
+  color: #6b7280;
+
+  margin-bottom: 15px;
+}
+
+
+.remarks-button {
+  border:
+    1px solid #6366f1;
+
+  background: #6366f1;
+
+  color: white;
+
+  padding: 13px 22px;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+
+.remarks-button:hover {
+  background: #4f46e5;
+
+  transform: translateY(-2px);
+}
+
+
+/* ================= INNER HEADER ================= */
+
+.inner-header {
+  min-height: 75px;
+
+  padding: 15px 7%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  background: white;
+
+  border-bottom:
+    1px solid #eee;
+}
+
+
+.inner-header h1 {
+  font-size: 24px;
+
+  color: #1f2937;
+}
+
+
+.back-button {
+  border: none;
+
+  background: #f3f4f6;
+
+  color: #4f46e5;
+
+  padding: 10px 15px;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+
+.back-button:hover {
+  background: #ede9fe;
+}
+
+
+/* ================= PAGE INTRO ================= */
+
+.page-intro {
+  color: #6b7280;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+
+/* ================= RULES ================= */
+
+.rules-container {
+  max-width: 850px;
+
+  margin: auto;
+
+  padding: 50px 20px;
+}
+
+
+.rule-card {
+  background: white;
+
+  padding: 22px;
+
+  margin-bottom: 15px;
+
+  border-radius: 16px;
+
+  display: flex;
+
+  gap: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(40,50,90,.06);
+}
+
+
+.rule-number {
+  min-width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #ede9fe;
+
+  color: #6366f1;
+
+  font-weight: bold;
+}
+
+
+.rule-card h2 {
+  font-size: 17px;
+
+  margin-bottom: 7px;
+}
+
+
+.rule-card p {
+  color: #6b7280;
+
+  line-height: 1.5;
+}
+
+
+/* ================= REMARK FORM ================= */
+
+.remark-container {
+  max-width: 750px;
+
+  margin: auto;
+
+  padding: 50px 20px;
+}
+
+
+.remark-box {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px rgba(40,50,90,.08);
+}
+
+
+.remark-box h2 {
+  font-size: 17px;
+
+  margin-bottom: 15px;
+
+  color: #374151;
+}
+
+
+.type-buttons {
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+}
+
+
+.type-button {
+  flex: 1;
+
+  padding: 13px;
+
+  border-radius: 10px;
+
+  border: 1px solid #ddd;
+
+  background: #f9fafb;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: .2s;
+}
+
+
+.type-button:hover {
+  border-color: #6366f1;
+
+  background: #f5f3ff;
+}
+
+
+.type-button.selected {
+  background: #6366f1;
+
+  color: white;
+
+  border-color: #6366f1;
+}
+
+
+textarea {
+  width: 100%;
+
+  min-height: 180px;
+
+  resize: vertical;
+
+  padding: 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  margin-bottom: 7px;
+}
+
+
+textarea:focus {
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(99,102,241,.1);
+}
+
+
+.character-count {
+  color: #9ca3af;
+
+  font-size: 12px;
+
+  margin-bottom: 20px;
+}
+
+
+.submit-button {
+  background: #6366f1;
+
+  color: white;
+
+  width: 100%;
+}
+
+
+.submit-button:hover {
+  background: #4f46e5;
+}
+
+
+.success-message {
+  margin-top: 15px;
+
+  text-align: center;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   ANONYMOUS REMARKS
+===================================================== */
+
+.remarks-container {
+  max-width: 800px;
+
+  margin: auto;
+
+  padding: 50px 20px;
+}
+
+
+.remark-post {
+  background: white;
+
+  padding: 22px;
+
+  margin-bottom: 18px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 30px rgba(40,50,90,.07);
+}
+
+
+.anonymous-number {
+  font-size: 13px;
+
+  font-weight: bold;
+
+  color: #6366f1;
+
+  margin-bottom: 12px;
+}
+
+
+.remark-text {
+  color: #374151;
+
+  line-height: 1.6;
+
+  font-size: 16px;
+
+  margin-bottom: 18px;
+
+  word-wrap: break-word;
+}
+
+
+.remark-type {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  margin-bottom: 12px;
+}
+
+
+.remark-type.positive {
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+
+.remark-type.negative {
+  background: #fee2e2;
+
+  color: #b91c1c;
+}
+
+
+/* =====================================================
+   MODERN REACTIONS
+===================================================== */
+
+.reactions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border-top:
+    1px solid #eee;
+
+  padding-top: 16px;
+}
+
+
+.reaction-button {
+  border:
+    1px solid #e5e7eb;
+
+  background: #f8fafc;
+
+  color: #4b5563;
+
+  padding: 9px 16px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    color .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+
+/* Hover */
+
+.reaction-button:hover {
+  transform: translateY(-2px);
+
+  background: white;
+
+  box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+}
+
+
+/* ================= BLUE LIKE ================= */
+
+.reaction-button.like-button.voted {
+  background: #2563eb;
+
+  color: white;
+
+  border-color: #2563eb;
+
+  transform: scale(1.08);
+
+  box-shadow:
+    0 6px 18px
+    rgba(37,99,235,.30);
+
+  animation:
+    likePop .3s ease;
+}
+
+
+/* ================= RED DISLIKE ================= */
+
+.reaction-button.dislike-button.voted {
+  background: #dc2626;
+
+  color: white;
+
+  border-color: #dc2626;
+
+  transform: scale(1.08);
+
+  box-shadow:
+    0 6px 18px
+    rgba(220,38,38,.30);
+
+  animation:
+    dislikePop .3s ease;
+}
+
+
+/* ================= LIKE POP ================= */
+
+@keyframes likePop {
+
+  0% {
+    transform: scale(.85);
+  }
+
+  60% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1.08);
+  }
+
+}
+
+
+/* ================= DISLIKE POP ================= */
+
+@keyframes dislikePop {
+
+  0% {
+    transform: scale(.85);
+  }
+
+  60% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1.08);
+  }
+
+}
+
+
+/* Disabled */
+
+.reaction-button:disabled {
+  cursor: default;
+}
+
+
+/* Reaction number */
+
+.reaction-count {
+  font-weight: 700;
+
+  margin-left: 2px;
+}
+
+
+/* ================= NO REMARKS ================= */
+
+.no-remarks {
+  background: white;
+
+  padding: 50px 25px;
+
+  text-align: center;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 30px rgba(40,50,90,.07);
+}
+
+
+.no-remarks-icon {
+  font-size: 45px;
+
+  margin-bottom: 15px;
+}
+
+
+.no-remarks h2 {
+  margin-bottom: 10px;
+}
+
+
+.no-remarks p {
+  color: #6b7280;
+
+  margin-bottom: 20px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 750px) {
+
+  .top-header {
+    padding: 0 20px;
+  }
+
+
+  .hero {
+    min-height:
+      calc(100vh - 75px);
+
+    padding: 50px 25px;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+  }
+
+
+  .hero p {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+
+  .hero-logo {
+    width: 280px;
+
+    height: 280px;
+  }
+
+
+  .big-logo {
+    width: 150px;
+
+    height: 150px;
+
+    font-size: 90px;
+  }
+
+
+  .orbit-one {
+    width: 220px;
+
+    height: 220px;
+  }
+
+
+  .orbit-two {
+    width: 270px;
+
+    height: 140px;
+  }
+
+
+  .inner-header {
+    padding: 15px 20px;
+  }
+
+
+  .inner-header h1 {
+    font-size: 20px;
+  }
+
+
+  .remark-box {
+    padding: 22px;
+  }
+
+
+  .type-buttons {
+    flex-direction: column;
+  }
+
+
+  .reactions {
+    flex-wrap: wrap;
+  }
+
+}
