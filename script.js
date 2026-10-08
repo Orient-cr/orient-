@@ -21,9 +21,9 @@ function showPage(pageId) {
 
   });
 
-
   const selectedPage =
-    document.getElementById(pageId);
+    document.getElement
+ById(pageId);
 
 
   if (selectedPage) {
@@ -540,4 +540,4 @@ function escapeHTML(text) {
    LOAD REMARKS
 ===================================================== */
 
-displayRemarks();
+displayRemarks()
