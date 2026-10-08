@@ -1,3 +1,6 @@
+const supabaseUrl='https://ooocbnyoxfiaqiacoarq.supabase.co/rest/v1/';
+const supabaseKey='sb_publishable_yAERXVp-s9TN4-84F8d1Dw_KZk4oZRj';
+const supabase=windows.supabase.createClient(https://ooocbnyoxfiaqiacoarq.supabase.co/rest/v1/,sb_publishable_yAERXVp-s9TN4-84F8d1Dw_KZk4oZRj);
 /* =====================================================
    ANOWEB
    JAVASCRIPT
