@@ -6,45 +6,29 @@
 
 /* ================= PAGE NAVIGATION ================= */
 
+
 function showPage(pageId) {
+  const pages = document.querySelectorAll(".page");
 
-  const pages =
-    document.querySelectorAll(".page");
-
-
-  pages.forEach(function(page) {
-
+  pages.forEach(function (page) {
     page.classList.remove("active");
-
   });
 
-  const selectedPage =
-    document.getElement
-ById(pageId);
-
+  const selectedPage = document.getElementById(pageId);
 
   if (selectedPage) {
-
-    const selectedPage = document.getElementById(pageId);
-
+    selectedPage.classList.add("active");
   }
 
-
   window.scrollTo({
-
     top: 0,
-
     behavior: "smooth"
-
   });
 
-
-  /* Refresh remarks when opening
-     the remarks page */
-
   if (pageId === "remarksPage") {
-
     displayRemarks();
+  }
+}
 
   }
 
